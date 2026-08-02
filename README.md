@@ -4,7 +4,7 @@ A full-stack retail AI project that combines product image classification, custo
 
 ## Features
 
-- Product category classification using a TensorFlow CNN model
+- Product category classification using a MobileNetV2 transfer-learning model
 - Customer face recognition using OpenCV LBPH
 - Customer visit logging with SQLite
 - Sentiment analysis for customer reviews

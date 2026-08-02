@@ -25,10 +25,11 @@ def load_product_model():
 
 
 def predict_product(image, model):
-    gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    resized_image = cv2.resize(gray_image, (28, 28))
-    normalized_image = resized_image.astype("float32") / 255.0
-    model_input = normalized_image.reshape(1, 28, 28, 1)
+    rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    resized_image = cv2.resize(rgb_image, (96, 96))
+    model_input = np.expand_dims(resized_image.astype("float32"), axis=0)
+
+    model_input = tf.keras.applications.mobilenet_v2.preprocess_input(model_input)
 
     probabilities = model.predict(model_input, verbose=0)[0]
     predicted_index = int(np.argmax(probabilities))

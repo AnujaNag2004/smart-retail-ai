@@ -48,13 +48,13 @@ Pytest
 
 ### Product Image Classification
 
-A TensorFlow/Keras convolutional neural network was trained using the Fashion-MNIST dataset.
+A TensorFlow/Keras MobileNetV2 transfer-learning model was trained using the Fashion-MNIST dataset.
 
 - Training images: 55,000
 - Validation images: 5,000
 - Test images: 10,000
 - Categories: 10 fashion-product classes
-- Test accuracy: 88.53%
+- Test accuracy: 86.79%
 
 The trained model is stored as:
 
