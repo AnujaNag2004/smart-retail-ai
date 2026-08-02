@@ -1,0 +1,44 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey", "good morning"],
+      "responses": ["Hello! How can I help you today?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "thank you bye"],
+      "responses": ["Goodbye! Have a great day."]
+    },
+    {
+      "tag": "store_hours",
+      "patterns": ["what are your store hours", "when do you open", "when do you close", "store timing"],
+      "responses": ["Our store is open from 9 AM to 9 PM every day."]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": ["what is your return policy", "can i return an item", "how do i return my order", "return product"],
+      "responses": ["You can return unused items within 30 days with the original receipt."]
+    },
+    {
+      "tag": "order_status",
+      "patterns": ["where is my order", "track my order", "order status", "when will my order arrive"],
+      "responses": ["Please share your order number and our support team will help track it."]
+    },
+    {
+      "tag": "refund_status",
+      "patterns": ["where is my refund", "refund status", "when will i get my refund", "refund not received"],
+      "responses": ["Refunds are usually processed within 5 to 7 business days."]
+    },
+    {
+      "tag": "shipping_cost",
+      "patterns": ["what is the shipping cost", "delivery charges", "is shipping free", "how much for delivery"],
+      "responses": ["Shipping charges depend on your location and are shown during checkout."]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": ["what payment methods do you accept", "can i pay by card", "do you accept upi", "payment options"],
+      "responses": ["We accept cards, UPI, net banking, and cash on delivery where available."]
+    }
+  ]
+}
