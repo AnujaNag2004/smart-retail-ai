@@ -4,3 +4,4 @@ __pycache__
 *.pyc
 .ipynb_checkpoints
 data/retail.db
+data/raw/Womens Clothing E-Commerce Reviews.csv
