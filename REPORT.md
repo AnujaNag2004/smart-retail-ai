@@ -109,6 +109,11 @@ POST /analyze-sentiment
 
 It accepts customer review text and returns the predicted sentiment with a confidence score. Each result is logged in the review_analyses database table.
 
+- Dataset: Women's E-Commerce Clothing Reviews
+- Total reviews used: 22,641
+- Test accuracy: 80.30%
+- Model: TF-IDF Vectorizer + Logistic Regression with balanced class weights
+
 ##FAQ Chatbot
 The chatbot uses a hybrid design:
 

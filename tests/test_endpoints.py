@@ -24,7 +24,7 @@ def test_sentiment_endpoint():
     response = client.post(
         "/analyze-sentiment",
         headers=HEADERS,
-        json={"text": "The product quality is excellent."},
+        json={"text": "I love the quality of this dress and it fits perfectly."},
     )
 
     assert response.status_code == 200
